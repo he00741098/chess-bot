@@ -104,7 +104,7 @@ if(board[newY][newX].isOccupied()){
 }
 	//System.out.println("102: "+xCoeff+", "+yCoeff);
 if(direction == 2 || direction == 6){	
-for(int i = 0; i<Math.abs(newX-x)-1; i++){
+for(int i = 1; i<Math.abs(newX-x); i++){
 	//System.out.println(y+(yCoeff*i)+", "+(x+(xCoeff*i)));
 if(board[y][x+(xCoeff*i)].isOccupied()){
 	return false;

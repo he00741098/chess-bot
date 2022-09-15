@@ -41,7 +41,10 @@ public square clone(){
 	return n;
 }	
 	
-public void empty(){occupied = false;color = -999;name =" ";}
+public void empty(){occupied = false;color = -999;name =" ";
+									 whiteClear();
+										blackClear();
+									 }
 public square(String name){
 	this.name = name;
 }

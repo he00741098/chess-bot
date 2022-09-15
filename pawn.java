@@ -55,15 +55,16 @@ return true;
 	
 }else if(piece.getColor() == 1){
 //if black
-if(y-newY >2){
+	//System.out.println("black");
+if(y-newY <=2){
 if(y-newY==1&&newX-x==0&&!board[newY][newX].isOccupied()){
 	return true;
-}else if(y-newY == 2&&newX-x==0&&y==1&&!board[newY][newX].isOccupied()){
+}else if(y-newY == 2&&newX-x==0&&y==6&&!board[newY][newX].isOccupied()){
 return true;
 	
-}else if(newX-x==1&&y-newY==1&&board[newY][newX].getColor()==1){
+}else if(newX-x==1&&y-newY==1&&board[newY][newX].getColor()==0){
 	return true;
-}else if(x-newX==1&&y-newY==1&&board[newY][newX].getColor()==1){
+}else if(x-newX==1&&y-newY==1&&board[newY][newX].getColor()==0){
 	return true;
 }
 

@@ -37,11 +37,58 @@ int color = piece.getColor();
 	
 if(Math.abs(newY-y)>1||Math.abs(newX-x)>1){return false;}
 if(board[newY][newX].isOccupied()&&board[newY][newX].getColor()!=color){
-	return true;
+	if(color==0){	
+	if(board[newY][newX].getBlack()==0){
+		return true;}else{return false;}
+	}else if(color==1){
+if(board[newY][newX].getWhite()==0){
+		return true;}else{return false;}
+
+		
+	}
 }
 if(!board[newY][newX].isOccupied()){
-	return true;
+		if(color==0){	
+	if(board[newY][newX].getBlack()==0){
+		return true;}else{return false;}
+	}else if(color==1){
+if(board[newY][newX].getWhite()==0){
+		return true;}else{return false;}
+
+		
+	}
 }
+
+
+
+
+
+
+	//castling
+// 	if(color == 0){
+// if(!board.getWhiteCheck()){
+
+// if(newX==2&&newY==0){
+// 	if(!board.getwRook1()){
+// if()
+		
+// 	}
+// }
+
+	
+// }
+
+		
+// 	}else if(color == 1){
+
+		
+// 	}
+
+
+
+
+
+	
 return false;	
 }
 
